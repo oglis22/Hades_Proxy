@@ -1,0 +1,52 @@
+[2024-08-25T20:53:30.113Z] [INFO] Hades Proxy is starting....
+[2024-08-25T20:53:30.131Z] [INFO] Proxy is running on port 80
+[2024-08-25T20:54:40.091Z] [INFO] Hades Proxy is starting....
+[2024-08-25T20:54:40.100Z] [INFO] Proxy is running on port 80
+[2024-08-25T20:58:08.189Z] [INFO] Hades Proxy is starting....
+[2024-08-25T20:58:08.210Z] [INFO] Proxy is running on port 80
+[2024-08-25T21:27:01.399Z] [INFO] Hades Proxy is starting....
+[2024-08-25T21:27:01.414Z] [INFO] Proxy is running on port 80
+[2024-08-25T21:33:15.461Z] [INFO] Hades Proxy is starting....
+[2024-08-25T21:33:15.471Z] [INFO] Proxy is running on port 80
+[2024-08-25T21:35:04.579Z] [INFO] Hades Proxy is starting....
+[2024-08-25T21:35:04.613Z] [INFO] Proxy is running on port 80
+[2024-08-25T21:35:06.248Z] [WARN] Running 'Hades Proxy' without domain_required is not recomended
+[2024-08-25T21:35:06.269Z] [ERROR] Error while redirecting to target-server http://127.0.0.1:3000: Error: connect ECONNREFUSED 127.0.0.1:3000
+[2024-08-25T21:35:06.607Z] [WARN] Running 'Hades Proxy' without domain_required is not recomended
+[2024-08-25T21:35:06.610Z] [ERROR] Error while redirecting to target-server http://127.0.0.1:3000: Error: connect ECONNREFUSED 127.0.0.1:3000
+[2024-08-25T21:35:33.145Z] [WARN] Running 'Hades Proxy' without domain_required is not recomended
+[2024-08-25T21:35:33.149Z] [ERROR] Error while redirecting to target-server http://127.0.0.1:3000: Error: connect ECONNREFUSED 127.0.0.1:3000
+[2024-08-25T21:35:44.656Z] [WARN] Running 'Hades Proxy' without domain_required is not recomended
+[2024-08-25T21:35:44.661Z] [ERROR] Error while redirecting to target-server http://127.0.0.1:3000: Error: connect ECONNREFUSED 127.0.0.1:3000
+[2024-08-25T21:35:45.090Z] [WARN] Running 'Hades Proxy' without domain_required is not recomended
+[2024-08-25T21:35:45.095Z] [ERROR] Error while redirecting to target-server http://127.0.0.1:3000: Error: connect ECONNREFUSED 127.0.0.1:3000
+[2024-08-25T21:38:19.614Z] [INFO] Hades Proxy is starting....
+[2024-08-25T21:38:19.633Z] [INFO] Proxy is running on port 80
+[2024-08-25T21:38:21.645Z] [WARN] Running 'Hades Proxy' without domain_required is not recomended
+[2024-08-25T21:38:21.662Z] [ERROR] Error while redirecting to target-server http://127.0.0.1:3000: Error: connect ECONNREFUSED 127.0.0.1:3000
+[2024-08-25T21:38:22.007Z] [WARN] Running 'Hades Proxy' without domain_required is not recomended
+[2024-08-25T21:38:22.013Z] [ERROR] Error while redirecting to target-server http://127.0.0.1:3000: Error: connect ECONNREFUSED 127.0.0.1:3000
+[2024-08-25T21:38:58.572Z] [WARN] Running 'Hades Proxy' without domain_required is not recomended
+[2024-08-25T21:38:58.578Z] [ERROR] Error while redirecting to target-server http://127.0.0.1:3000: Error: connect ECONNREFUSED 127.0.0.1:3000
+[2024-08-25T21:39:26.826Z] [WARN] Running 'Hades Proxy' without domain_required is not recomended
+[2024-08-25T21:39:26.831Z] [ERROR] Error while redirecting to target-server http://127.0.0.1:3000: Error: connect ECONNREFUSED 127.0.0.1:3000
+[2024-08-25T21:39:48.892Z] [WARN] Running 'Hades Proxy' without domain_required is not recomended
+[2024-08-25T21:39:48.898Z] [ERROR] Error while redirecting to target-server http://127.0.0.1:3000: Error: connect ECONNREFUSED 127.0.0.1:3000
+[2024-08-25T21:40:00.557Z] [WARN] Running 'Hades Proxy' without domain_required is not recomended
+[2024-08-25T21:40:00.560Z] [ERROR] Error while redirecting to target-server http://127.0.0.1:3000: Error: connect ECONNREFUSED 127.0.0.1:3000
+[2024-08-25T21:41:40.417Z] [INFO] Hades Proxy is starting....
+[2024-08-25T21:41:40.428Z] [INFO] Proxy is running on port 80
+[2024-08-25T21:41:43.324Z] [WARN] Running 'Hades Proxy' without domain_required is not recomended
+[2024-08-25T21:41:43.358Z] [ERROR] Error while redirecting to target-server http://127.0.0.1:3000: Error: connect ECONNREFUSED 127.0.0.1:3000
+[2024-08-25T21:43:29.346Z] [INFO] Hades Proxy is starting....
+[2024-08-25T21:43:29.376Z] [INFO] Proxy is running on port 80
+[2024-08-25T21:43:29.826Z] [WARN] Running 'Hades Proxy' without domain_required is not recomended
+[2024-08-25T21:43:29.843Z] [ERROR] Error while redirecting to target-server http://127.0.0.1:3000: Error: connect ECONNREFUSED 127.0.0.1:3000
+[2024-08-25T21:43:50.933Z] [INFO] Hades Proxy is starting....
+[2024-08-25T21:43:50.945Z] [INFO] Proxy is running on port 80
+[2024-08-25T21:43:53.098Z] [WARN] Running 'Hades Proxy' without domain_required is not recomended
+[2024-08-25T21:43:53.123Z] [ERROR] Error while redirecting to target-server http://127.0.0.1:3000: Error: connect ECONNREFUSED 127.0.0.1:3000
+[2024-08-25T21:43:54.989Z] [WARN] Running 'Hades Proxy' without domain_required is not recomended
+[2024-08-25T21:43:54.994Z] [ERROR] Error while redirecting to target-server http://127.0.0.1:3000: Error: connect ECONNREFUSED 127.0.0.1:3000
+[2024-08-25T21:44:10.525Z] [INFO] Hades Proxy is starting....
+[2024-08-25T21:44:10.544Z] [INFO] Proxy is running on port 80

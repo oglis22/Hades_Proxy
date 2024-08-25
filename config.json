@@ -1,0 +1,13 @@
+{
+    "port": 80,
+    "domain": "blockheaven.de",
+    "domain_requierd": true,
+    "domain_routing": "http://127.0.0.1:3000",
+    "subdomain_routing": [
+        {
+            "subdomain": "api",
+            "target": "http://127.0.0.1:3000",
+            "proxies": false
+        }
+    ]
+}
