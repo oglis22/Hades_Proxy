@@ -47,5 +47,5 @@ To run Hades you need <a href="https://nodejs.org/en">NodeJS</a>
 
 ### Generall
 
-- [x] llightweight installable and usable proxy
+- [x] lightweight installable and usable proxy
 
