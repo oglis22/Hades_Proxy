@@ -49,3 +49,4 @@ To run Hades you need <a href="https://nodejs.org/en">NodeJS</a>
 
 - [x] lightweight installable and usable proxy
 
+![Screenshot 2024-09-04 200411](https://github.com/user-attachments/assets/1b5ba9e2-bf99-404a-8728-cc5ba26de1e9)
