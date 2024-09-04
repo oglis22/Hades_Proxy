@@ -18,6 +18,11 @@ LINUX:
 
 ./install.sh && ./start.sh
 
+DOCKER:
+
+docker build -t hadex-proxy .
+docker run -d --name hades-proxy hades-proxy
+
 MANUEL:
 
 npm i
