@@ -1,0 +1,1 @@
+del logs\log.txt

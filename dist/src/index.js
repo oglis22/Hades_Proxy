@@ -9,6 +9,7 @@ const path_1 = __importDefault(require("path"));
 const config_json_1 = __importDefault(require("../config.json"));
 const logger_1 = __importDefault(require("./utils/logger"));
 const reverse_proxy_1 = __importDefault(require("./reverse_proxy/reverse_proxy"));
+const firewall_1 = __importDefault(require("./firewall/firewall"));
 const app = (0, express_1.default)();
 const logger = new logger_1.default();
 logger.logo();
@@ -17,7 +18,11 @@ app.use(express_1.default.static(path_1.default.join(__dirname, '../../templates
 app.set('views', path_1.default.join(__dirname, '../../templates'));
 app.set('view engine', 'ejs');
 //Regester Hades Proxy Modules
+app.use('/', firewall_1.default);
 app.use('/', reverse_proxy_1.default);
+//Checking Config
+if (!config_json_1.default.domain_requierd)
+    logger.warn(`Running 'Hades Proxy' without domain_required is not recomended`);
 const server = http_1.default.createServer(app);
 server.listen(config_json_1.default.port, () => logger.info(`Proxy is running on port ${config_json_1.default.port}`));
 //# sourceMappingURL=index.js.map

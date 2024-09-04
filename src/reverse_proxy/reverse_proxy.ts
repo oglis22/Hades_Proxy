@@ -12,22 +12,19 @@ reverse_proxy.use((req, res) => {
     
     if (config.domain_requierd == true) {
         if (req.headers.host != config.domain) {
-            const absolutePath = path.join(__dirname, '../../../templates/security.html');
-            res.sendFile(absolutePath);
+            logger.info(req.ip + "Tried to connect but 'domain_requierd' is enabled");
+            res.render('security', {message: "error"});
             return;
         }
-        const proxy = httpProxy.createProxy({});
-        proxy.web(req, res, {target: config.domain_routing}, (err) => {
-            logger.error(`Error while redirecting to target-server ${config.domain_routing}: ${err}`);
-            res.render('site_not_found', {error_message: `Error while redirecting ${config.domain_routing} | domain is not required`});
-            return;
-        });
-        return;
     }
 
-    logger.warn(`Running 'Hades Proxy' without domain_required is not recomended`)
+    
     const list = req.headers.host.split(".");
     if (list.length != 3) {
+        if (!config.proxied) {
+            res.redirect(config.domain_routing);
+            return;
+        }
         const proxy = httpProxy.createProxy({});
         proxy.web(req, res, {target: config.domain_routing}, (err) => {
             logger.error(`Error while redirecting to target-server ${config.domain_routing}: ${err}`);
@@ -36,12 +33,24 @@ reverse_proxy.use((req, res) => {
         });
     }
     
-
-    sub_domains.forEach(sd => {
-        
-        
-
-    });
+    if (list.length == 3) {
+        const sub = list[0];
+        sub_domains.forEach(sd => {
+            if (sub == sd.subdomain) {
+                if (!sd.proxied) {
+                    res.redirect(sd.target);
+                    return;
+                }
+                const proxy = httpProxy.createProxy({});
+                proxy.web(req, res, {target: sd.target}, (err) => {
+                    logger.error(`Error while redirecting to target-server ${sd.subdomain} -> ${sd.target}: ${err}`);
+                    res.render('site_not_found', {error_message: `Error while redirecting ${sd.target}`});
+                    return;
+                });
+            }
+        });
+    }
+    
 
 });
 
