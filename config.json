@@ -1,18 +1,18 @@
 {
-    "port": 80,
+    "port": 3000,
     "domain": "example.com",
-    "domain_requierd": false,
-    "domain_routing": "http://127.0.0.1:3000/",
-    "proxied": true,
+    "domain_required": true,
+    "domain_routing": "http://example.com",
+    "proxied": false,
     "subdomain_routing": [
         {
             "subdomain": "api",
-            "target": "http://127.0.0.1:3000",
-            "proxied": false
+            "target": "http://api.example.com",
+            "proxied": true
         }
     ],
     "rate_limiter": {
         "window_time": 60000,
-        "max_request": 2
+        "max_request": 100
     }
 }
