@@ -9,8 +9,8 @@ const logger = new Logger();
 reverse_proxy.use((req, res) => {
 
     const sub_domains = config.subdomain_routing;
-    
-if (config.domain_required === true) {
+
+if (config.domain_requierd == true) {
     const host = req.headers.host;
     const domain = config.domain;
 
