@@ -21,7 +21,7 @@ app.use('/', firewall);
 app.use('/', reverse_proxy)
 
 //Checking Config
-if (!config.domain_requierd) logger.warn(`Running 'Hades Proxy' without domain_required is not recomended`);
+if (!config.domain_required) logger.warn(`Running 'Hades Proxy' without domain_required is not recomended`);
 
 const server = http.createServer(app);
 server.listen(config.port, () => logger.info(`Proxy is running on port ${config.port}`));
