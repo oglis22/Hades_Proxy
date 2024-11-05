@@ -10,13 +10,17 @@ reverse_proxy.use((req, res) => {
 
     const sub_domains = config.subdomain_routing;
     
-    if (config.domain_requierd == true) {
-        if (req.headers.host != config.domain) {
-            logger.info(req.ip + "Tried to connect but 'domain_requierd' is enabled");
-            res.render('security', {message: "error"});
-            return;
-        }
+if (config.domain_required === true) {
+    const host = req.headers.host;
+    const domain = config.domain;
+
+    if (!host.endsWith(domain)) {
+        logger.info(req.ip + " Tried to connect but 'domain_required' is enabled");
+        res.render('security', {message: "error"});
+        return;
     }
+}
+
 
     
     const list = req.headers.host.split(".");
